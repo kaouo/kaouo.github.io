@@ -1,0 +1,53 @@
+:root {
+  /* 글로벌 폰트 설정을 위한 CSS 변수 */
+  --mainEng-font: "Montserrat";
+  --mainKor-font: "nanumSquareNeo";
+  --mainNum-font: "gmarket";
+
+  /* 메인 배경 색상과 서브 배경 색상들 */
+  --mainBg-color: #f3ede8;
+  --subBg100: #cdc0b1;
+  --subBg200: #afa395;
+  --subBg300: #81887c;
+  --subBg400: #afa7a2;
+  --subBg500: #a6afa2;
+
+  /* 흰색과 다양한 검은색 계열 색상 */
+  --white: #fff;
+  --black: #000;
+  --black100: #2b2b2b;
+  --black200: #434343;
+  --black300: #686868;
+  --black400: #e0e0e0;
+
+  /* 폰트 패밀리 설정 */
+  font-family: var(--mainEng-font), var(--mainKor-font);
+  /* 기본 폰트 크기 */
+  font-size: 16px;
+  /* 줄 간격 설정 */
+  line-height: 1.5;
+  /* 기본 폰트 두께 */
+  font-weight: 400;
+
+  /* 폰트 합성 비활성화 */
+  font-synthesis: none;
+  /* 텍스트 렌더링 최적화 */
+  text-rendering: optimizeLegibility;
+  /* 웹킷 기반 브라우저에서 폰트 스무딩 활성화 */
+  -webkit-font-smoothing: antialiased;
+  /* Firefox(OS X)에서 폰트 스무딩 활성화 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 모바일 브라우저에서 텍스트 크기 조정 비활성화 */
+  -webkit-text-size-adjust: 100%;
+
+  /* 화면이 800px 이하일 때 폰트 크기와 줄 간격 조정 */
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+body {
+  /* 배경 색상을 CSS 변수로 설정 */
+  background-color: var(--mainBg-color);
+}
